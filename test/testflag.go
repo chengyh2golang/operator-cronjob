@@ -38,7 +38,7 @@ func (s *sliceValue) String() string {
 可执行文件名 -slice="java,go"  最后将输出[java,go]
 可执行文件名 最后将输出[default is me]
 */
-func main(){
+func main() {
 	var languages []string
 	flag.Var(newSliceValue([]string{}, &languages), "slice", "I like programming `languages`")
 	flag.Parse()
